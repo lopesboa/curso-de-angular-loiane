@@ -1,2 +1,7 @@
-<p>cursos Components!</p>
+<p>Lista de Cursos do portal {{ nomeDoPortal }}</p>
+
+<ul>
+  <li *ngFor="let cursos of listaDeCursos">{{ cursos }}</li>
+</ul>
+
 <app-curso-detalhe></app-curso-detalhe>
