@@ -9,7 +9,8 @@ import { CursosModule } from './cursos/cursos.module'
 import { DataBindingComponent } from './data-binding/data-binding.component'
 import { MeuFormModule } from './data-binding/meu-form/meu-form.module';
 import { InputPropertyComponent } from './data-binding/input-property/input-property.component';
-import { OutputPropertyComponent } from './data-binding/output-property/output-property.component'
+import { OutputPropertyComponent } from './data-binding/output-property/output-property.component';
+import { InterpolationComponent } from './data-binding/interpolation/interpolation.component'
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { OutputPropertyComponent } from './data-binding/output-property/output-p
     DataBindingComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
+    InterpolationComponent,
   ],
   imports: [
     BrowserModule,
