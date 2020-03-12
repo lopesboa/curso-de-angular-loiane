@@ -1,6 +1,8 @@
 <section>
   <h2 class="fontzero">Interpolation</h2>
-  <article>
+<!-- INTERPOLAÇÃO  -->
+
+  <!-- <article>
     <h3>Interpolação</h3>
     <p>String renderizada com interpolação {{ url }}</p>
   </article>
@@ -9,11 +11,11 @@
     <h3>Property Binding</h3>
 
     <img src="{{ imageUrl }}" alt="Pixabay Image"> <!-- INTERPOLAÇÃO -->
-    <img [src]="imageUrl" alt="Pixabay Image">  <!-- PROPERTY BIND -->
-  </article>
+    <!-- <img [src]="imageUrl" alt="Pixabay Image">  <!-- PROPERTY BIND -->
+  <!-- </article> -->
 
   <!-- CLASS E STYLE BINDING -->
-  <article>
+  <!-- <article>
     <h3>Class e Style Binding</h3>
 
     <div>
@@ -36,7 +38,7 @@
       <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">...</div>
       <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">...</div>
     </div>
-  </article>
+  </article> -->
 
   <!-- <article>
     <h3>Ng Bootstrap</h3>
@@ -50,5 +52,30 @@
 
   </article> -->
 
+  <!-- EVENT BINDING -->
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="botaoClicado()">Me Click</button>
+      <br><br>
+
+      <input type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor(campoInput.value)"
+      (blur)="salvarValor(campoInput.value)"
+      #campoInput
+      />
+
+      <p>Valor: {{ valorDigitado }}</p>
+      <p>Valor: {{ valorSalvo }}</p>
+      <br><br>
+
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highligth]="isMouseOver"
+      >Passe o mouse sobre mim</span>
+    </div>
+  </article>
 
 </section>
