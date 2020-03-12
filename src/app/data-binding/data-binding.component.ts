@@ -43,9 +43,18 @@ export class DataBindingComponent implements OnInit {
 
   url: string = 'http://loiane.com'
   imageUrl: string = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'
+
   valorDigitado: string = ''
   valorSalvo: string
   isMouseOver: boolean = false
+
+  nomeDoCurso: string = 'Angular'
+
+  valorInicial: number = 10
+
+  onMudouValor(evento) {
+  console.log(evento.novoValor)
+  }
 
   constructor() {
     this.reset()

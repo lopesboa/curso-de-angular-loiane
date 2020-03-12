@@ -7,13 +7,17 @@ import { AppComponent } from './app.component'
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component'
 import { CursosModule } from './cursos/cursos.module'
 import { DataBindingComponent } from './data-binding/data-binding.component'
-import { MeuFormModule } from './data-binding/meu-form/meu-form.module'
+import { MeuFormModule } from './data-binding/meu-form/meu-form.module';
+import { InputPropertyComponent } from './data-binding/input-property/input-property.component';
+import { OutputPropertyComponent } from './data-binding/output-property/output-property.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
     DataBindingComponent,
+    InputPropertyComponent,
+    OutputPropertyComponent,
   ],
   imports: [
     BrowserModule,
