@@ -1,0 +1,14 @@
+<article>
+  <h3>Two-way Data Binding</h3>
+  <div>
+    <input type="text"
+    [ngModel]="dadosPessoais.nome"
+    (ngModelChange)="dadosPessoais.nome"
+    >
+    <input type="text"
+    [(ngModel)]="dadosPessoais.nome"
+    >
+
+    <p>Ola Eu sou o {{ dadosPessoais.nome }}, e tenho {{ dadosPessoais.idade }}</p>
+  </div>
+</article>
