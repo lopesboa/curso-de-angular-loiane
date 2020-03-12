@@ -41,13 +41,6 @@ export class DataBindingComponent implements OnInit {
 
   alerts: Alert[]
 
-
-  imageUrl: string = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'
-
-  valorDigitado: string = ''
-  valorSalvo: string
-  isMouseOver: boolean = false
-
   nomeDoCurso: string = 'Angular'
 
   valorInicial: number = 10
@@ -65,22 +58,6 @@ export class DataBindingComponent implements OnInit {
 
   reset() {
     this.alerts = Array.from(ALERTS);
-  }
-
-  botaoClicado() {
-    alert('Botao Clicado')
-  }
-
-  onKeyUp(evento: KeyboardEvent){
-    this.valorDigitado = (<HTMLInputElement>evento.target).value
-  }
-
-  salvarValor(valor) {
-    this.valorSalvo = valor
-  }
-
-  onMouseOverOut(){
-    this.isMouseOver = !this.isMouseOver
   }
 
   ngOnInit(): void {

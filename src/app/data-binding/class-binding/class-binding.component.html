@@ -1,0 +1,24 @@
+<article>
+  <h3>Class e Style Binding</h3>
+
+  <div>
+    Seleciona uma class:
+
+    <select #class (change)="0">
+      <option value="alert-success">Sucesso</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Worn</option>
+      <option value="alert-danger">Danger</option>
+    </select>
+    <br><br>
+
+    <div class="alert {{ class.value }}" role="alert">
+      Texto Colorido conforme o valor do combobox.
+    </div>
+
+    <div class="alert" role="alert" [class.alert-success]="class.value == 'alert-success'">...</div>
+    <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">...</div>
+    <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">...</div>
+    <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">...</div>
+  </div>
+</article>
