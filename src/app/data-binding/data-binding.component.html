@@ -79,5 +79,9 @@
 
   <!-- <app-meu-form></app-meu-form> -->
 
-  <app-input-property [nome]="nomeDoCurso"></app-input-property>
+  <!-- <app-input-property [nome]="nomeDoCurso"></app-input-property> -->
+
+  <app-output-property [valor]="valorInicial"
+  (mudouValor)="onMudouValor($event)"
+  ></app-output-property>
 </section>
