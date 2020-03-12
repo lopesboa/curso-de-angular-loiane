@@ -1,21 +1,17 @@
-<section>
+<!-- <section>
   <h2 class="fontzero">Interpolation</h2>
-<!-- INTERPOLAÇÃO  -->
-
-  <!-- <article>
+  <article>
     <h3>Interpolação</h3>
     <p>String renderizada com interpolação {{ url }}</p>
   </article>
 
   <article>
     <h3>Property Binding</h3>
+    <img src="{{ imageUrl }}" alt="Pixabay Image">
+    <img [src]="imageUrl" alt="Pixabay Image">
+  </article>
 
-    <img src="{{ imageUrl }}" alt="Pixabay Image"> <!-- INTERPOLAÇÃO -->
-    <!-- <img [src]="imageUrl" alt="Pixabay Image">  <!-- PROPERTY BIND -->
-  <!-- </article> -->
-
-  <!-- CLASS E STYLE BINDING -->
-  <!-- <article>
+  <article>
     <h3>Class e Style Binding</h3>
 
     <div>
@@ -38,9 +34,9 @@
       <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">...</div>
       <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">...</div>
     </div>
-  </article> -->
+  </article>
 
-  <!-- <article>
+  <article>
     <h3>Ng Bootstrap</h3>
 
     <p *ngFor="let alert of alerts">
@@ -49,10 +45,8 @@
     <p>
       <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
     </p>
+  </article>
 
-  </article> -->
-
-  <!-- EVENT BINDING -->
   <article>
     <h3>Event Binding</h3>
     <div>
@@ -78,4 +72,10 @@
     </div>
   </article>
 
+</section> -->
+
+<section>
+  <h2 class="fontzero">Data Binding</h2>
+
+  <app-meu-form></app-meu-form>
 </section>
