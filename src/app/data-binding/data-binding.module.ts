@@ -11,16 +11,19 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { FormsModule } from '@angular/forms';
 import { MeuFormComponent } from './meu-form/meu-form.component';
 
-
-
 @NgModule({
-  declarations: [DataBindingComponent, CicloComponent,
-    ClassBindingComponent, EventBindingComponent,
-    OutputPropertyComponent, InputPropertyComponent,
-    InterpolationComponent, PropertyBindingComponent, MeuFormComponent],
-  imports: [
-    CommonModule, FormsModule
+  declarations: [
+    DataBindingComponent,
+    CicloComponent,
+    ClassBindingComponent,
+    EventBindingComponent,
+    OutputPropertyComponent,
+    InputPropertyComponent,
+    InterpolationComponent,
+    PropertyBindingComponent,
+    MeuFormComponent,
   ],
-  exports: [DataBindingComponent]
+  imports: [CommonModule, FormsModule],
+  exports: [DataBindingComponent],
 })
-export class DataBindingModule { }
+export class DataBindingModule {}

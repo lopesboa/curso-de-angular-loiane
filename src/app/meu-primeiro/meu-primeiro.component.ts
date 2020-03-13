@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'meu-primeiro-component',
+  selector: 'app-primeiro-component',
   templateUrl: 'meu-primeiro.component.html',
-  styleUrls: ['meu-primeiro.component.scss']
+  styleUrls: ['meu-primeiro.component.scss'],
 })
-
 export class MeuPrimeiroComponent {
-  constructor () {}
+  constructor() {}
 }

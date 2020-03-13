@@ -1,56 +1,63 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 
 interface Alert {
   type: string;
   message: string;
 }
 
-const ALERTS: Alert[] = [{
+const ALERTS: Alert[] = [
+  {
     type: 'success',
     message: 'This is an success alert',
-  }, {
+  },
+  {
     type: 'info',
     message: 'This is an info alert',
-  }, {
+  },
+  {
     type: 'warning',
     message: 'This is a warning alert',
-  }, {
+  },
+  {
     type: 'danger',
     message: 'This is a danger alert',
-  }, {
+  },
+  {
     type: 'primary',
     message: 'This is a primary alert',
-  }, {
+  },
+  {
     type: 'secondary',
     message: 'This is a secondary alert',
-  }, {
+  },
+  {
     type: 'light',
     message: 'This is a light alert',
-  }, {
+  },
+  {
     type: 'dark',
     message: 'This is a dark alert',
-  }
+  },
 ];
 
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.scss']
+  styleUrls: ['./data-binding.component.scss'],
 })
 export class DataBindingComponent implements OnInit {
+  alerts: Alert[];
 
-  alerts: Alert[]
+  nomeDoCurso = 'Angular Loiane';
 
-  nomeDoCurso: string = 'Angular'
-
-  valorInicial: number = 10
+  valorInicial = 10;
 
   onMudouValor(evento) {
-  console.log(evento.novoValor)
+    console.log(evento.novoValor);
   }
 
   constructor() {
-    this.reset()
+    this.reset();
   }
   close(alert: Alert) {
     this.alerts.splice(this.alerts.indexOf(alert), 1);
@@ -60,7 +67,5 @@ export class DataBindingComponent implements OnInit {
     this.alerts = Array.from(ALERTS);
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -3,14 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-interpolation',
   templateUrl: './interpolation.component.html',
-  styleUrls: ['./interpolation.component.scss']
+  styleUrls: ['./interpolation.component.scss'],
 })
 export class InterpolationComponent implements OnInit {
-  url: string = 'http://loiane.com'
+  url = 'http://loiane.com';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
