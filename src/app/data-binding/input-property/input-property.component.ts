@@ -7,11 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   // inputs: ['nomeCurso: nome']
 })
 export class InputPropertyComponent implements OnInit {
+  @Input() portalCurso: string;
+  constructor() {}
 
-  @Input('nome') nomeCurso = ''
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

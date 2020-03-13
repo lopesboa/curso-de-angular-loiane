@@ -1,27 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 interface IDadosPessoais {
-  nome: string,
-  idade: number,
+  nome: string;
+  idade: number;
   endereco: {
-    rua: string,
-    numero: number,
-    bairro: string,
-    cidade: string
-  }
+    rua: string;
+    numero: number;
+    bairro: string;
+    cidade: string;
+  };
 }
 
 @Component({
   selector: 'app-meu-form',
   templateUrl: './meu-form.component.html',
-  styleUrls: ['./meu-form.component.scss']
+  styleUrls: ['./meu-form.component.scss'],
 })
-
-
 export class MeuFormComponent implements OnInit {
-
-  nome: string = 'abc'
-
+  nome = 'abc';
   dadosPessoais: IDadosPessoais = {
     nome: 'Lopes',
     idade: 32,
@@ -29,13 +25,11 @@ export class MeuFormComponent implements OnInit {
       rua: 'B',
       numero: 34,
       bairro: 'Vila',
-      cidade: 'SP'
-    }
-  }
+      cidade: 'SP',
+    },
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

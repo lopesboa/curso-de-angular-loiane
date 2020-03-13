@@ -1,13 +1,11 @@
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CursosService {
-
-    constructor() { }
-
-  getCursos () {
-    return ['Java', 'Angular', 'Typescript', 'Nodejs', 'Reactjs']
+  constructor() {}
+  getCursos() {
+    return ['Java', 'Angular', 'Typescript', 'Nodejs', 'Reactjs'];
   }
 }
