@@ -1,16 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
- display: flex;
- justify-content: center;
- align-self: center;
- background: #f2f2f2;
-}
-@import "../node_modules/bootstrap-scss/bootstrap.scss"
-
+// body {
+//   display: flex;
+//    justify-content: center;
+//    align-self: center;
+//   background: #f2f2f2;
+// }
+@import '../node_modules/bootstrap-scss/bootstrap.scss';
