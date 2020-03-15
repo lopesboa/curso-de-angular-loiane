@@ -1,0 +1,11 @@
+<h5>*ngIf</h5>
+
+<div>
+  Lista de curso<br />
+
+  <ul *ngIf="listaDeElementos.length > 0; else elseBlock">
+    <li>{{ listaDeElementos }}</li>
+  </ul>
+
+  <ng-template #elseBlock> {{ errorMessage }} </ng-template>
+</div>
